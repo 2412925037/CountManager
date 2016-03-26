@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/voice_right_voice_time"
+        style="@style/text_style"
+        android:layout_gravity="center"
+        android:background="@color/theme_background_color"
+        android:singleLine="true"
+        android:padding="2dp"
+        android:textColor="@color/app_text_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" >
+        <ImageView
+            android:id="@+id/voice_right_user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"/>
+
+        <FrameLayout
+            android:id="@+id/voice_right_voice_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/voice_right_user_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/item_voice_right_bg">
+
+            <View
+                android:id="@+id/voice_right_voice_anim"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/icon_voice_right_3"
+                android:layout_marginRight="10dp" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/text_style"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/voice_right_voice_layout"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/app_text_color"
+            android:id="@+id/voice_right_voice_length" />
+    </RelativeLayout>
+</LinearLayout>

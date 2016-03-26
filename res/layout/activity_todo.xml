@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color">
+
+    <include layout="@layout/title_subview"
+        android:id="@+id/todo_title_view"/>
+
+    <LinearLayout
+        android:id="@+id/todo_task_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@+id/todo_title_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/text_bold_style"
+            android:textSize="@dimen/font_17"
+            android:layout_marginBottom="5dp"
+            android:text="@string/todo_mission_title"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/theme_background_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/text_style"
+                    android:id="@+id/todo_task_title_view"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/font_14"/>
+                <TextView
+                    android:id="@+id/todo_task_number_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/app_title_background"
+                    android:textSize="@dimen/font_14"/>
+                <TextView
+                    style="@style/text_style"
+                    android:id="@+id/todo_task_content_view"
+                    android:layout_marginTop="3dp"
+                    android:textSize="@dimen/font_14"/>
+                <TextView
+                    style="@style/text_style"
+                    android:id="@+id/todo_task_name_view"
+                    android:layout_marginTop="3dp"
+                    android:textSize="@dimen/font_14"/>
+                <TextView
+                    style="@style/text_style"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/todo_task_time_view"
+                    android:textSize="@dimen/font_14"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/app_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/todo_commit_button"
+        android:layout_below="@+id/todo_task_view"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_bold_style"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/font_17"
+            android:text="@string/todo_progress_title"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/theme_background_color"/>
+
+        <ListView
+            android:id="@+id/todo_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00000000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/todo_commit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/commit_button_style"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/app_alert_button_submit"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+		
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_subview" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/create_site_no_title"
+                    style="@style/text_style"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/create_site_no"
+                    android:textSize="@dimen/font_17" />
+
+                <EditText
+                    android:id="@+id/create_site_no_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/create_site_no_title"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:textSize="@dimen/font_17"
+                    android:hint="@string/app_edittext_hint"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_background_color"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/create_site_name_title"
+                    style="@style/text_style"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/create_site_name"
+                    android:textSize="@dimen/font_17" />
+
+                <EditText
+                    android:id="@+id/create_site_name_view"
+                    style="@style/text_style"
+                    android:layout_toRightOf="@+id/create_site_name_title"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/create_site_name_hint"
+                    android:background="@color/white"
+                    android:textSize="@dimen/font_17"
+                    android:maxLength="100"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_background_color"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/create_site_latitude_title"
+                    style="@style/text_style"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/create_site_latitude"
+                    android:textSize="@dimen/font_17" />
+
+                <EditText
+                    android:id="@+id/create_site_latitude_view"
+                    style="@style/text_style"
+                    android:layout_toRightOf="@+id/create_site_latitude_title"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/create_site_ll_hint"
+                    android:textSize="@dimen/font_17"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_background_color"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/create_site_longitude_title"
+                    style="@style/text_style"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/create_site_longitude"
+                    android:textSize="@dimen/font_17" />
+
+                <EditText
+                    android:id="@+id/create_site_longitude_view"
+                    style="@style/text_style"
+                    android:layout_toRightOf="@+id/create_site_longitude_title"
+                    android:gravity="right"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/create_site_ll_hint"
+                    android:textSize="@dimen/font_17"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_background_color"/>
+            <LinearLayout
+                android:id="@+id/create_site_role_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/create_site_county_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/site_county_title"
+                        style="@style/text_style"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/kq_search_county"
+                        android:textSize="@dimen/font_17"/>
+
+                    <TextView
+                        android:id="@+id/create_site_county_view"
+                        style="@style/text_style"
+                        android:gravity="right"
+                        android:background="@color/white"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/create_site_county_arrow"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_17"/>
+
+                    <ImageView
+                        android:id="@+id/create_site_county_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/app_arrow"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/theme_background_color"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

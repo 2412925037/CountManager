@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="theme_background_color">#edeef4</color><!--页面背景灰色、listview分割线、上下层分割线-->
+    <color name="app_title_background">#db4537</color><!--页面统一红色字体-->
+    <color name="app_text_color">#464648</color><!--页面文字统一颜色，例：首页“我的待办”-->
+    <color name="home_manager_top_bg">#b2d4dc</color><!--首页区域经理当前人数背景色-->
+    <color name="home_mission_text">#53b2e8</color><!--首页任务查询-->
+    <color name="home_kq_text">#ff9600</color><!--首页统一橘黄色-->
+    <color name="kq_item_normal_text">#2972e6</color><!--考勤查询页面正常字体 -->
+    <color name="kq_item_error_text">#da4637</color><!--考勤查询页面异常字体 -->
+    <color name="kq_item_vacation_text">#20bf44</color><!--考勤查询页面休假字体 -->
+</resources>

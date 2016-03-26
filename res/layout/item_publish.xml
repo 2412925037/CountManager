@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <com.tower.countmanager.view.RoundAngleImageView
+        android:id="@+id/item_grid_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_add_photo"
+        roundHeight="20dp"
+        roundWidth="20dp" >
+    </com.tower.countmanager.view.RoundAngleImageView>
+
+</LinearLayout>

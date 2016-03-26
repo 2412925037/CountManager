@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">县域经理助手</string>
+    <string name="app_alert_button_ok">确定</string>
+    <string name="app_alert_button_cancel">取消</string>
+    <string name="app_alert_logout_title">提示</string>
+    <string name="app_alert_logout_message">您确定要退出吗？</string>
+    <string name="app_alert_button_submit">提交</string>
+    <string name="app_connnect_failure">连接失败</string>
+    <string name="app_connecting_dialog_text">正在发送请求…</string>
+    <string name="app_connecting_network_no_connect">当前网络不可用，请检查网络设置</string>
+    <string name="app_location_text">请打开GPS设置</string>
+    <string name="app_location_error_text">未获取经纬度，请检查设置</string>
+    <string name="app_location_error_63_text">网络不通导致获取经纬度失败，请检查网络是否通畅</string>
+    <string name="app_location_error_62_text">无法获取有效定位依据，请检查是否处于飞行模式，请设置后重启手机</string>
+    <string name="app_commit_button_success_text">提交成功</string>
+    <string name="app_commit_people_isempty">必填项不能为空</string>
+    <string name="app_commit_isempty">各项不能为空</string>
+    <string name="app_location_longitude">经度：</string>
+    <string name="app_location_latitude">纬度：</string>
+    <string name="app_photo_time">时间：</string>
+    <string name="app_yes">是</string>
+    <string name="app_no">否</string>
+    <string name="app_save">保存</string>
+    <string name="app_commit">提交</string>
+    <string name="app_temporary_storage">暂存</string>
+    <string name="app_edittext_hint">请输入</string>
+    <string name="app_please_select">请选择</string>
+    <string name="app_take_photo">拍照</string>
+    <string name="app_select_photo">选择图片</string>
+    <string name="app_photo_album">从相册中选择</string>
+    <string name="app_send_photo_success">照片上传成功</string>
+    <!-- 登录 -->
+    <string name="login_commit_button">登录</string>
+    <string name="login_userid_hint">用户名</string>
+    <string name="login_userpwd_hint">密码</string>
+    <string name="login_userid_error">登录名不能为空</string>
+    <string name="login_userpwd_error">密码不能为空</string>
+    
+    <!-- 任务详情 -->
+    <string name="task_info_title">任务详情</string>
+    <string name="task_info_name">任务名称</string>
+    <string name="task_info_name2">任务名称（*）</string>
+    <string name="task_info_type">任务类型</string>
+    <string name="task_info_num">任务编号</string>
+    <string name="task_info_information">任务说明</string>
+    <string name="task_info_person">任务接收人</string>
+    <string name="task_info_person2">任务接收人（*）</string>
+	<string name="task_info_site_info">站址信息</string>
+	<string name="task_info_site_info2">站址信息（*）</string>
+	<string name="task_info_complete_time">任务完成时限</string>
+	<string name="task_info_complete_time2">任务完成时限（*）</string>
+	<string name="task_info_emergency_degree">紧急程度</string>
+	<string name="task_info_multiple_feedback">是否多次反馈</string>
+	<string name="task_info_voice_message">语音留言</string>
+    <string name="task_info_multi_more">多</string>
+    <string name="task_info_multi_normal">否</string>
+	
+	<!-- 待办 -->
+	<string name="work_auto">待办</string>
+	<string name="work_my_auto">我的待办</string>
+	<string name="work_auto_sign">待签收</string>
+	<string name="work_auto_read">待阅</string>
+	<string name="work_finish">已办</string>
+	<string name="work_sign">签收</string>
+	<string name="work_screening">筛选</string>
+    <string name="work_search_creater_name">创建人</string>
+    <string name="work_search_creater_time">派发时间</string>
+    <string name="work_search_start_time">开始时间</string>
+    <string name="work_search_end_time">结束时间</string>
+    <string name="work_info">详情</string>
+    <string name="work_search_create_site">新建基站</string>
+    <string name="work_search_stock">存量改造</string>
+    <string name="work_search_managerment">项目管理</string>
+    <string name="work_search_other">其他</string>
+	
+	<!-- 草稿箱 -->
+	<string name="draft_box_title">草稿箱</string>
+	<string name="draft_box_draft">起草</string>
+	<string name="draft_box_auto_confirm">待确认</string>
+	<string name="draft_box_confirm">确认</string>
+	<string name="draft_box_delete">删除</string>
+	<string name="draft_box_add">新增</string>
+	<string name="draft_report">汇报</string>
+    <string name="draft_box_search_title">草稿查询</string>
+    <string name="draft_issued">下达</string>
+	
+	<!-- 待办操作-->
+	<string name="auto_operation_title">待办操作</string>
+	<string name="auto_operation_task_complete_info">任务完成说明</string>
+	<string name="auto_operation_upload_photo">上传照片</string>
+	<string name="auto_operation_location">定位</string>
+	<string name="auto_operation_remark">备注：</string>
+	<string name="auto_operation_voice_message">语音留言</string>
+	<string name="auto_operation_input_task_complete_info">请录入任务完成信息......</string>
+	<string name="auto_operation_hint_remark">手工录入</string>
+    <string name="auto_operation_location_latitude">纬度：%s</string>
+    <string name="auto_operation_location_longitude">经度：%s</string>
+	<string name="app_update_ok">定位更新完毕！</string>
+	<string name="auto_operation_tips_no_feedback">无新增反馈</string>
+    <!-- 待办反馈-->
+    <string name="back_info_title">待办反馈</string>
+    <string name="back_info_feedback_desc">反馈意见</string>
+    <string name="back_info_feedback_title">任务反馈</string>
+    <string name="back_info_feedback_hint">请录入反馈意见信息......</string>
+
+	<!-- 下达任务-->
+	<string name="assignment_task_title">下达任务</string>
+	<string name="assignment_task_hint_choose_type">选择类型</string>
+	
+	<!-- 汇报任务-->
+	<string name="report_task_title">汇报任务</string>
+	
+	<!-- 报表-->
+	<string name="report_form_title">报表</string>
+	<string name="report_form_task_complete_num">任务完成数</string>
+	<string name="report_form_month">月份</string>
+	<string name="report_form_score">满意度</string>
+	<string name="report_form_task_statistics">任务完成数统计</string>
+	<string name="report_form_score_statistics">满意度统计</string>
+	
+	<!-- 新增任务-->
+	<string name="create_new_task_title">新增任务</string>
+	<string name="create_new_task_assignment">下达</string>
+	<string name="create_new_task_hint">输入任务子类型</string>
+	
+	<!-- 任务处理 与评价-->
+	<string name="task_processing_evaluation_title">任务处理与评价</string>
+	<string name="task_processing_evaluation_task_info">任务信息</string>
+	<string name="task_processing_evaluation_situation">任务评价情况</string>
+	<string name="task_processing_evaluation_tips">请监督县域客户经理是否存在以下问题</string>
+	<string name="task_processing_evaluation_over_time">任务超时</string>
+	<string name="task_processing_evaluation_quality_bad">完成质量太差</string>
+	<string name="task_processing_evaluation_be_complaints">被投诉</string>
+	<string name="task_processing_evaluation_major_accidents">发生重大事故</string>
+	<string name="task_processing_evaluation_ahead_complete">任务提前完成</string>
+	<string name="task_processing_evaluation_quality_complete">高质量完成任务</string>
+	<string name="task_processing_evaluation_customer_good">客户好评</string>
+	<string name="task_processing_evaluation_low_cost_complete">低成本完成任务</string>
+	<string name="task_processing_evaluation_hint_input_opinion">请输入评价意见</string>
+	<string name="task_processing_evaluation_count_num">市区中本月完成任务%s单</string>
+	 
+    <!-- 首页 -->
+    <string name="home_title">项目管理系统</string>
+    <string name="home_worker_task">%s个</string>
+    <string name="home_worker_mission_receive">接收任务</string>
+    <string name="home_worker_mission_over">任务完成</string>
+    <string name="home_worker_mission_success">任务满意度</string>
+    <string name="home_worker_success_title">满意度排行</string>
+    <string name="home_worker_success_text">我的排名：%s</string>
+    <string name="home_todo_title_text">我的待办</string>
+    <string name="home_todo_number_text">共%s条     查看更多</string>
+    <string name="home_bottom_mission_text">任务查询</string>
+    <string name="home_bottom_kq_text">考勤查询</string>
+    <string name="home_common_text">查看详情</string>
+    <string name="home_worker_button_text">汇报任务</string>
+    <string name="home_manager_button_text">下达任务</string>
+    <string name="home_manager_top_online">当前县域客户经理在线人数%s人</string>
+    <string name="home_manager_top_text">，在线任务处理%s人</string>
+    <string name="home_manager_top_person_text">驻县经理人数：%s位</string>
+    <string name="home_manager_top_over_text">完成任务数：%s个</string>
+    <string name="home_manager_top_success_text">完成满意度：%s</string>
+    <string name="home_manager_top_mission_text">总任务数：%s</string>
+    <string name="home_manager_month">%s月</string>
+
+    <!-- 语音留言 -->
+    <string name="voice_title">语音留言</string>
+    <string name="voice_rcd_normal">按住 说话</string>
+    <string name="voice_rcd_recording">松开 结束</string>
+    <string name="voice_dialog_recording">手指上滑，取消发送</string>
+    <string name="voice_dialog_cancel">松开手指，取消发送</string>
+    <string name="voice_dialog_short">录音时间过短</string>
+
+    <!-- 待办 -->
+    <string name="todo_title">待办</string>
+    <string name="todo_mission_title">任务信息</string>
+    <string name="todo_progress_title">待办进程</string>
+    <string name="todo_progress_create">新增反馈</string>
+    <string name="todo_step_time">时间：%s</string>
+    <string name="todo_step_people">执行人：%s</string>
+
+    <!-- 侧滑页 -->
+    <string name="left_draft_title">草稿箱</string>
+    <string name="left_logout">退出登录</string>
+
+    <!-- 考勤查询 -->
+    <string name="kq_title">考勤查询</string>
+    <string name="kq_type_normal">正常</string>
+    <string name="kq_type_error">异常</string>
+    <string name="kq_type_vacation">休假</string>
+    <string name="kq_search_task">任务</string>
+    <string name="kq_search_province">所属省</string>
+    <string name="kq_search_city">所属市</string>
+    <string name="kq_search_county">所属区</string>
+    <string name="kq_search_manager">驻县经理</string>
+    <string name="kq_search_time">考勤时间</string>
+    <string name="kq_search_time_sqlit">至</string>
+    <string name="kq_search_province_title">请选择省份</string>
+    <string name="kq_search_city_title">请选择城市</string>
+    <string name="kq_search_county_title">请选择区县</string>
+    <string name="kq_search_btn">查询</string>
+    <string name="kq_people_name">请输入人员名称</string>
+
+    <!-- 任务查询 -->
+    <string name="mission_title">任务查询</string>
+    <string name="mission_mission_title">任务</string>
+    <string name="mission_hint">请输入任务名称、任务编号</string>
+    <string name="mission_upload_type_title">是否直接上报</string>
+    <string name="mission_upload_time_title">上报时间</string>
+    <string name="mission_release_time_title">下达时间</string>
+    <string name="mission_type_title">任务状态</string>
+    <string name="mission_evaluate_title">评价</string>
+    <string name="mission_operate_time">派发时间</string>
+    <string name="mission_operate_time_from_hint">开始时间</string>
+    <string name="mission_operate_time_to_hint">结束时间</string>
+    <string name="mission_task_readying">执行中</string>
+    <string name="mission_task_over">已完成</string>
+
+    <!-- 详情 -->
+    <string name="detail_title">详情</string>
+    <string name="detail_task_title">任务信息</string>
+    <string name="detail_info_title">任务执行情况</string>
+    <string name="detail_evaluate_title">评价信息</string>
+    <string name="detail_voice_title">语音留言</string>
+    <string name="detail_progress_title">任务跟踪</string>
+
+    <!-- 个人信息 -->
+    <string name="user_info_title">个人信息</string>
+    <string name="user_info_icon">头像</string>
+    <string name="user_info_name">姓名</string>
+    <string name="user_info_position">岗位</string>
+    <string name="user_info_count">账号</string>
+    <string name="user_info_email">邮箱</string>
+    <string name="user_info_phone">手机</string>
+    <string name="user_info_sex">性别</string>
+    <string name="user_info_province">所属省份</string>
+    <string name="user_info_address">所属地市</string>
+    <string name="user_info_department">所属部门</string>
+
+    <!-- 个人信息 -->
+    <string name="create_site_title">选择基站</string>
+    <string name="create_site_no">站点编号</string>
+    <string name="create_site_name">站点名称</string>
+    <string name="create_site_latitude">纬度</string>
+    <string name="create_site_longitude">经度</string>
+    <string name="create_site_name_hint">请输入（100字以内）</string>
+    <string name="create_site_ll_hint">请输入（小数点后六位）</string>
+</resources>

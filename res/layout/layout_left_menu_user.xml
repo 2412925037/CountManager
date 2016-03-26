@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color" >
+
+    <RelativeLayout
+        android:id="@+id/left_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <com.tower.countmanager.view.XCRoundImageView
+            android:id="@+id/left_user_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/left_menu_user_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/left_user_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left_user_name"
+                style="@style/text_bold_style"
+                android:textSize="19sp"/>
+            <TextView
+                android:id="@+id/left_user_eng_name"
+                android:layout_marginTop="5dp"
+                style="@style/text_style"/>
+            <TextView
+                android:id="@+id/left_user_address"
+                android:layout_marginTop="5dp"
+                style="@style/text_style"/>
+            <TextView
+                android:id="@+id/left_user_department"
+                android:layout_marginTop="5dp"
+                style="@style/text_style"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_arrow" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/left_draft_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/left_user_layout"
+        android:layout_marginTop="25dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/left_draft_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/left_draft_icon"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            style="@style/text_style"
+            android:layout_toRightOf="@+id/left_draft_icon"
+            android:layout_centerVertical="true"
+            android:text="@string/left_draft_title"
+            android:textSize="@dimen/font_18"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/left_menu_arrow"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/left_logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:background="@drawable/left_menu_lagout_bg"
+        android:text="@string/left_logout"
+        android:textColor="@color/app_title_background"/>
+</RelativeLayout>

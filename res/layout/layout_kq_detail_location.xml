@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_kq_detail_time"
+        style="@style/text_style"
+        android:textSize="@dimen/font_17"/>
+    <TextView
+        android:id="@+id/item_kq_detail_address"
+        style="@style/text_style"
+        android:textSize="@dimen/font_17"/>
+    <TextView
+        android:id="@+id/item_kq_detail_lat"
+        style="@style/text_style"
+        android:textSize="@dimen/font_17"/>
+    <TextView
+        android:id="@+id/item_kq_detail_lon"
+        style="@style/text_style"
+        android:textSize="@dimen/font_17"/>
+
+</LinearLayout>

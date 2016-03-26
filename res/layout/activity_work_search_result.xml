@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/title_subview"/>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/work_result_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/theme_background_color"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        ptr:ptrMode="both"
+        ptr:ptrHeaderTextColor="@android:color/black"/>
+</LinearLayout>

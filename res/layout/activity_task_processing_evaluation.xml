@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_subview" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <com.tower.countmanager.view.XCRoundImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/left_menu_user_bg" />
+
+                    <ImageView
+                        android:id="@+id/btn_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/task_processing_evaluation_phone_selector"
+                        android:clickable="true" />
+
+                    <LinearLayout
+                        android:id="@+id/task_processing_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_phone"
+                        android:layout_toRightOf="@id/avatar"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/task_processing_person_name"
+                                style="@style/text_style"
+                                android:layout_marginRight="4dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:textSize="@dimen/font_17" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/task_processing_address"
+                            style="@style/text_style"
+                            android:layout_marginRight="4dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_17" />
+
+                        <TextView
+                            android:id="@+id/task_processing_count_num"
+                            style="@style/text_style"
+                            android:layout_marginRight="4dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_17" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/task_processing_evaluation_task_info"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:id="@+id/img_task_info_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/app_arrow" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_task_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_task_info_next"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/task_processing_evaluation_task_name"
+                            style="@style/text_style"
+                            android:textSize="@dimen/font_17" />
+
+                        <TextView
+                            android:id="@+id/task_processing_evaluation_task_code"
+                            style="@style/text_style"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/font_17" />
+
+                        <TextView
+                            android:id="@+id/task_processing_evaluation_task_type"
+                            style="@style/text_style"
+                            android:textSize="@dimen/font_17" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/task_processing_evaluation_situation"
+                        style="@style/text_style"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/task_processing_evaluation_situation"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/task_processing_evaluation_situation"
+                        android:background="@color/theme_background_color" />
+
+                    <TextView
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/task_processing_evaluation_situation"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical" >
+
+                        <RatingBar
+                            android:id="@+id/task_processing_evaluation_ratingbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="20dp"
+                            android:isIndicator="false"
+                            android:maxHeight="38dip"
+                            android:minHeight="38dip"
+                            android:numStars="5"
+                            android:progressDrawable="@drawable/task_processing_evaluation_ratingbar_drawable"
+                            android:rating="3"
+                            android:stepSize="1" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/task_processing_evaluation_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_ratingBar"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            style="@style/text_style"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/task_processing_evaluation_tips"
+                            android:textSize="@dimen/font_17" />
+                    </RelativeLayout>
+
+                    <TableLayout
+                        android:id="@+id/table1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/task_processing_evaluation_tips"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone" >
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/checkBox1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_over_time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_quality_bad"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginTop="10dp" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_be_complaints"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_major_accidents"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/table2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/task_processing_evaluation_tips"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone" >
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/checkBox5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_ahead_complete"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_quality_complete"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginTop="10dp" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_customer_good"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/checkbox_bg_selector"
+                                android:paddingLeft="10dp"
+                                android:text="@string/task_processing_evaluation_low_cost_complete"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_17" />
+                        </TableRow>
+                    </TableLayout>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/task_processing_evaluation_input_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/theme_background_color"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|top"
+                    android:hint="@string/task_processing_evaluation_hint_input_opinion"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/task_info_voice_message_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/task_info_voice_message"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/font_17" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/app_arrow" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/theme_background_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_btn_task_processing_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/btn_commit"
+                    style="@style/commit_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/app_alert_button_submit" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

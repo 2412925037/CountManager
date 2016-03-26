@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/report_task_layout"
+    android:background="@color/theme_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_subview" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/sale_chance_info_chance_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:text="@string/task_info_type"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:id="@+id/task_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/sale_chance_info_chance_name_title"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/icon_arrow_task_info"
+                        android:singleLine="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/assignment_task_hint_choose_type"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+
+                    <EditText
+                       	android:id="@+id/task_type2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/task_type"
+                        android:background="@color/theme_background_color"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/create_new_task_hint"
+                        android:singleLine="true"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/task_num_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/task_info_num"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:id="@+id/task_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/task_num_title"
+                        android:singleLine="true"
+                        android:text="自动生成"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/task_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/task_info_name"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <EditText
+                        android:id="@+id/task_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/task_name_title"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/auto_operation_hint_remark"
+                        android:singleLine="true"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/task_info_information_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/task_info_information"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <EditText
+                        android:id="@+id/task_info_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/task_info_information_title"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/auto_operation_hint_remark"
+                        android:singleLine="true"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_recieve_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/task_info_person_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/task_info_person"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+					<TextView
+                        android:id="@+id/task_recieve_person"
+                        style="@style/text_style"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/task_info_person"
+                        android:textSize="@dimen/font_17" />
+                    <ImageView
+                        android:id="@+id/task_info_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/app_arrow" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+               <LinearLayout
+                android:id="@+id/report_task_site_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/task_info_site_info"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/font_17" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/theme_background_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <ImageView
+                        android:id="@+id/img_task_info_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/app_arrow" />
+
+                    <LinearLayout 
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical"
+					    android:layout_centerVertical="true"
+					    android:layout_toLeftOf="@+id/img_task_info_next">
+                     <TextView
+                            android:id="@+id/site_info_name"
+                            style="@style/text_style"
+                            android:textSize="@dimen/font_17" />
+                        <TextView
+                            android:id="@+id/site_info_location"
+                            style="@style/text_style"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/font_17" />
+                        <TextView
+                            android:id="@+id/site_info_addr"
+                            style="@style/text_style"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/font_17" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_pic"
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_upload_photo"
+                    android:textSize="@dimen/font_18" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <com.tower.countmanager.view.SGridView
+                        android:id="@+id/custom_process_info_gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"
+                        android:scrollbars="none"
+                        android:verticalSpacing="10dp" >
+                    </com.tower.countmanager.view.SGridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/auto_operation_location"
+                        android:textSize="@dimen/font_18" />
+				  <ProgressBar
+				      	android:id="@+id/bar2"
+					    android:layout_toRightOf="@+id/tv_location"
+					    android:layout_marginLeft="10dp"
+					    android:layout_centerVertical="true"
+        				android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"
+         			    style="?android:attr/progressBarStyleSmall"
+         				android:visibility="gone"
+         				>
+				  </ProgressBar>
+                    <ImageView
+                         android:id="@+id/location_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_location_refresh" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_place"
+                    style="@style/text_style"
+                    android:text="辽宁省，大连市，甘井子区，聚贤路"
+                    android:textSize="@dimen/font_17" />
+
+                <TextView
+                    android:id="@+id/tv_while"
+                    style="@style/text_style"
+                    android:text="经度：38.568974 纬度：121.897987"
+                    android:textSize="@dimen/font_17" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/auto_operation_remark_title"
+                        style="@style/text_style"
+                        android:text="@string/auto_operation_remark"
+                        android:textSize="@dimen/font_17" />
+
+                    <EditText
+                        android:id="@+id/auto_operation_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/auto_operation_remark_title"
+                        android:background="@color/theme_background_color"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/auto_operation_hint_remark"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_info_voice_message"
+                    android:textSize="@dimen/font_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_auto_orperation" />
+            </RelativeLayout>
+
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_task_complete_info"
+                    android:textSize="@dimen/font_18" />
+
+                <EditText
+                    android:id="@+id/edit_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/theme_background_color"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|top"
+                    android:hint="@string/auto_operation_input_task_complete_info"
+                    android:padding="5dp" />
+            </LinearLayout>
+            
+             <RelativeLayout
+                android:id="@+id/button_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/app_temporary_storage"
+                    android:background="@drawable/app_red_small_button"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/btn_save"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/app_red_small_button"
+                    android:text="@string/app_commit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

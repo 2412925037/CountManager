@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/todo_create_back_layout"
+    android:background="@color/theme_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_subview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_task_complete_info"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:id="@+id/back_info_detail_desc"
+                    style="@style/text_style"
+                    android:textSize="@dimen/font_17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_upload_photo"
+                    android:textSize="@dimen/font_18" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <GridView
+                        android:id="@+id/back_info_detail_gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"
+                        android:scrollbars="none"
+                        android:verticalSpacing="10dp" >
+                    </GridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_bold_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/auto_operation_location"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:id="@+id/back_info_detail_address"
+                    style="@style/text_style"
+                    android:textSize="@dimen/font_17" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/auto_operation_location_latitude"
+                        style="@style/text_style"
+                        android:textSize="@dimen/font_17" />
+                    <TextView
+                        android:id="@+id/auto_operation_location_longitude"
+                        android:layout_marginLeft="5dp"
+                        style="@style/text_style"
+                        android:textSize="@dimen/font_17" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_remark"
+                    android:textSize="@dimen/font_17" />
+
+                <TextView
+                    android:id="@+id/back_info_detail_remark"
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_remark"
+                    android:textSize="@dimen/font_17" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_info_voice_message"
+                    android:textSize="@dimen/font_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_auto_orperation" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/back_info_detail_opinion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:text="@string/back_info_feedback_desc"
+                        android:textSize="@dimen/font_18" />
+
+                    <EditText
+                        android:id="@+id/back_info_detail_opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/theme_background_color"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left|top"
+                        android:hint="@string/back_info_feedback_hint"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/back_info_detail_button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp" >
+
+                    <TextView
+                        android:id="@+id/back_info_detail_commit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        style="@style/commit_button_style"
+                        android:text="@string/app_save" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

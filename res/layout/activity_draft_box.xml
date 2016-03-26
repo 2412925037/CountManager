@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/app_title_background"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/subview_title_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_title_back" />
+
+        <TextView
+            android:id="@+id/subview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/subview_title_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text="@string/work_screening"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_17" />
+
+        <TextView
+            android:id="@+id/subview_title_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/subview_title_filter"
+            android:padding="5dp"
+            android:text="@string/draft_box_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_17" />
+    </RelativeLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/draft_box_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null" >
+
+        <TabHost
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" >
+        </TabHost>
+    </android.support.v4.app.FragmentTabHost>
+
+    <FrameLayout
+        android:id="@+id/draft_box_realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

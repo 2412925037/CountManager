@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+	<ImageView
+	    android:id="@+id/item_todo_img"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/item_todo_create_view"
+        style="@style/text_bold_style"
+        android:layout_toRightOf="@+id/item_todo_img"
+        android:textSize="@dimen/font_17"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/item_todo_task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_todo_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_todo_title"
+            style="@style/text_bold_style"
+            android:textSize="@dimen/font_17"/>
+        <TextView
+            android:id="@+id/item_todo_content"
+            style="@style/text_style"
+            android:textSize="@dimen/font_14"/>
+
+        <RatingBar
+            android:id="@+id/item_todo_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:stepSize="1"
+            android:clickable="false"
+            style="@style/missionRatingBarStyle" />
+        <TextView
+            android:id="@+id/item_todo_time"
+            style="@style/text_style"
+            android:textSize="@dimen/font_14"/>
+        <TextView
+            android:id="@+id/item_todo_user"
+            style="@style/text_style"
+            android:textSize="@dimen/font_14"/>
+    </LinearLayout>
+</RelativeLayout>

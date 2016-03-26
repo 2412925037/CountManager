@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white" >
+
+    <!-- 标题栏 -->
+    <include layout="@layout/title_subview"/>
+
+    <!-- 聊天内容 listview -->
+    <ListView
+        android:id="@+id/voice_detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>

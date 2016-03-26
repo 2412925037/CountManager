@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <com.tower.countmanager.view.XCRoundImageView
+        android:id="@+id/item_kq_user_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/left_menu_user_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/item_kq_user_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_kq_name"
+            style="@style/text_style"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/item_kq_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/app_arrow"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/item_kq_user_icon">
+        <View
+            android:id="@+id/item_kq_icon"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/kq_item_normal_text"/>
+        <TextView
+            android:id="@+id/item_kq_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/kq_item_normal_text"
+            android:textSize="@dimen/font_17"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_kq_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_kq_user_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_16"/>
+</RelativeLayout>

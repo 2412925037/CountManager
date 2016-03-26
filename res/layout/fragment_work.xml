@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/app_title_background">
+
+        <ImageView
+            android:id="@+id/subview_title_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_title_user_icon"/>
+
+        <TextView
+	        android:id="@+id/subview_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+            android:gravity="center"
+	        android:layout_toRightOf="@+id/subview_title_arrow"
+	        android:layout_toLeftOf="@+id/subview_title_image"
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+	        android:textSize="19sp"
+	        android:textColor="@color/white" />
+	    
+	    <TextView
+	        android:id="@+id/subview_title_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:textColor="@color/white"
+            android:text="@string/app_alert_button_cancel"
+	        android:padding="10dp"
+	        android:visibility="visible"/>
+    </RelativeLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/work_tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@null">
+
+        <TabHost
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" >
+        </TabHost>
+
+    </android.support.v4.app.FragmentTabHost>
+
+    <FrameLayout
+        android:id="@+id/work_auto_realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

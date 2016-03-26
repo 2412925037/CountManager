@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white" >
+
+    <!-- 标题栏 -->
+    <include layout="@layout/title_subview"/>
+
+    <!-- 聊天内容 listview -->
+    <ListView
+        android:id="@+id/voice_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"/>
+
+    <!-- 底部按钮以及 编辑框 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_background_color" >
+
+        <com.tower.countmanager.view.AudioRecordButton
+            android:id="@+id/voice_rcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/voice_rcd_normal"
+            android:background="@drawable/voice_bottom_button"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+    </FrameLayout>
+</LinearLayout>

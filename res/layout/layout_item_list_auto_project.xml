@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/img_auto_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_auto_sign" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_auto_sign"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/work_project_title"
+                style="@style/text_style"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="@dimen/font_18" />
+
+            <TextView
+                android:id="@+id/work_project_typeName"
+                style="@style/text_style"
+                android:singleLine="true"
+                android:textSize="@dimen/font_16"  />
+
+            <TextView
+                android:id="@+id/work_project_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/font_16" 
+                android:textColor="@color/app_title_background" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/work_project_empName"
+                    style="@style/text_style"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/work_auto_createTime"
+                    style="@style/text_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_background_color" />
+
+    <TextView
+        android:id="@+id/btn_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg_work_sign"
+        android:gravity="center"
+        android:text="@string/work_sign"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/white" />
+
+</LinearLayout>

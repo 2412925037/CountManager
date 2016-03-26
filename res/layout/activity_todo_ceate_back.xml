@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/todo_create_back_layout"
+    android:background="@color/theme_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_subview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_task_complete_info"
+                    android:textSize="@dimen/font_18" />
+
+                <EditText
+                    android:id="@+id/todo_create_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/theme_background_color"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|top"
+                    android:hint="@string/auto_operation_input_task_complete_info"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/auto_operation_upload_photo"
+                    android:textSize="@dimen/font_18" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <com.tower.countmanager.view.SGridView
+                        android:id="@+id/custom_process_info_gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"
+                        android:scrollbars="none"
+                        android:verticalSpacing="10dp" >
+                    </com.tower.countmanager.view.SGridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/task_info_voice_message_title"
+                        style="@style/text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/auto_operation_location"
+                        android:textSize="@dimen/font_18" />
+ 					<ProgressBar
+				      	android:id="@+id/bar2"
+					    android:layout_toRightOf="@+id/task_info_voice_message_title"
+					    android:layout_marginLeft="10dp"
+					    android:layout_centerVertical="true"
+        				android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"
+         			    style="?android:attr/progressBarStyleSmall"
+         				android:visibility="gone"
+         				/>
+                    <ImageView
+                        android:id="@+id/auto_operation_relocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_location_refresh" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/auto_operation_location_address"
+                    style="@style/text_style"
+                    android:textSize="@dimen/font_17" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/auto_operation_location_latitude"
+                        style="@style/text_style"
+                        android:textSize="@dimen/font_17" />
+                    <TextView
+                        android:id="@+id/auto_operation_location_longitude"
+                        android:layout_marginLeft="5dp"
+                        style="@style/text_style"
+                        android:textSize="@dimen/font_17" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:id="@+id/auto_operation_remark_title"
+                        style="@style/text_style"
+                        android:text="@string/auto_operation_remark"
+                        android:textSize="@dimen/font_17" />
+
+                    <EditText
+                        android:id="@+id/todo_create_address_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/auto_operation_remark_title"
+                        android:background="@color/theme_background_color"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/auto_operation_hint_remark"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/task_info_voice_message"
+                    android:textSize="@dimen/font_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_auto_orperation" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp" >
+
+                <TextView
+                    android:id="@+id/todo_create_commit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    style="@style/commit_button_style"
+                    android:text="@string/app_save" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
